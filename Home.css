@@ -1,0 +1,89 @@
+html{
+    background: url('image.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e; 
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 0px;
+}
+.box input[type = "text"],.box input[type = "Password"], .box input[type = "File"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border-color: rgb(46, 204, 113);
+    border-width: 2px ;
+    padding: 2px 5px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "Password"]:focus, .box input [type = "File"]:focus{
+  width: 250px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:  2px solid #2ecc71;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+.box form .details{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.box form .divide{
+width: calc(100/2 - 20px);
+}
+form .divide input{
+height: 35px;
+width: 100%;
+}
+.box div {
+    text-align: left;
+}
+.box a:-webkit-any-link {
+    color: white;
+    text-decoration: none;
+}
+html{
+    background: url('background.jpg') no-repeat center fixed;
+    background-size: cover;
+}

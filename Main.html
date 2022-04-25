@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="Main.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h2"><span id="result-name"></span> </span>
+  </div>
+</nav>
+<img src="" id="result-image" alt="preview"/>
+<h1 ><span id = "result-title"></span></h1>
+<h4><span id = "result-subtitle"></span></h4>
+<p><span id = "result-maintext"></span></p>
+
+<script type="text/javascript">
+
+
+document.getElementById("result-name").innerHTML= localStorage.getItem("name");
+document.getElementById("result-title").innerHTML= localStorage.getItem("title");
+document.getElementById("result-subtitle").innerHTML= localStorage.getItem("subtitle");
+document.getElementById("result-maintext").innerHTML= localStorage.getItem("maintext");
+
+</script>
+
+<script>
+	
+	let recentImageDataUrl = localStorage.getItem("recent-image");
+
+		document.querySelector("#result-image").src = recentImageDataUrl;
+</script>
+ 
+</body>
+</html>
